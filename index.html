@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere, Stein, Papier</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>rock - paper - scissors</h1>
+    </header>
+
+    <main>
+        <section id="choiceOfNumber">
+            <p>how many rounds do you want to play?</p>
+            <form id = "formular" action="weiß-ich-noch-nicht-url"></form> <!--wohin soll es geshcickt werden? welche Methode?-->
+         
+                <input type="radio"  id = "val1" name="countGames" value=5 onclick="gamesNumber()">
+                <label for="5">5</label>
+                <input type="radio"  id = "val2" name="countGames" value=10 onclick="gamesNumber()">
+                <label for="10">10</label>
+                <input type="radio" id = "val3"  name="countGames" value=15 onclick="gamesNumber()">
+                <label for="15">15</label>
+                <input type="radio" id = "val4" name="countGames" value=20 onclick="gamesNumber()">
+                <label for="20">20</label>
+          
+        </section>
+
+        <section id="letsPlay">
+            <h3>
+                Let's play!<br>
+                Make your move!
+            </h3>
+            <div id="buttons">
+                <button class="chooseImg" onclick="addRock()"><img src="./assets/pics/button_rock.svg" alt="rock"></button>
+                <button class="chooseImg" onclick="addPaper()"><img src="./assets/pics/button_paper.svg" alt="paper"></button>
+                <button class="chooseImg"  onclick="addScissors()"><img src="./assets/pics/button_scissors.svg" alt="scissors"></button>
+            </div>
+        </section>
+
+        <section id="result">
+            <div id="ueberschriftenzeile">
+                <div>user</div>
+                <div>score</div>
+                <div>computer</div>
+            </div>
+            <div id="thisRound">
+                <h3>results for this round</h3>
+            </div>
+            <div id="resultThisRound">
+                <div id="yourChoice">
+                    <p>Your Choice is: </p>
+                </div>
+                <div id="computersChoice">
+                    <p>Computers Choice is:</p>
+                </div>
+                <div id="result">
+                    <p>The result for this round is: </p>
+                </div>
+            </div>
+            <div id="end">
+                <h3>results for this game is:  </h3>
+            </div>
+            <div id="score">
+                <div id="yourScore">
+                    <h3> 0:</h3>
+                </div>
+                <div id="computerScore">
+                    <h3>  0 </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <button>restart</button>
+    </footer>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
